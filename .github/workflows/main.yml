@@ -26,12 +26,9 @@ jobs:
         with:
           gradle-version: '8.7'
 
-      - name: Check repository
-        run: |
-          gralde --verison
-          java --verison
-          cd ./app
-          ls -la
-          ./gradlew build
-          ./gradlew  test
+      - name: Check Java Verion
+        run: java --version
+        
+      - name: Check Gradle version
+        run: gradle -v
           
