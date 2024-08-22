@@ -1,4 +1,10 @@
 run-project:
 	./gradlew run
 
-.PHONY: gradle
+build:
+	./gradlew build
+
+test:
+	./gradlew test
+.PHONY: build
+.PHONY: test
