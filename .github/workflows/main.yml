@@ -1,27 +1,28 @@
 name: Build and Test
+
 on: 
   # Событие которые запускают jobs
   push:
-    branches: ["main"]
+    branches: [ $default-branch ]
   pull_request:
-    branches: ["main"]
+    branches: [ $default-branch ]
 jobs:
   # Название job
   Build:
     runs-on: ubuntu-latest
     steps:
-          # Actions от github: проверяет репозиторий, гит и т.д.
-          - uses: actions/checkout@v3
+      # Actions от github: проверяет репозиторий, гит и т.д.
+      - uses: actions/checkout@v3
 
-          # Пример однолинейного простого скрипта shell
-          - name: Run a one-line script
-            run: echo Hello, world!
+      # Пример однолинейного простого скрипта shell
+      - name: Run a one-line script
+        run: echo Hello, world!
 
-          - name: List repository
-            run: ls -la
+      - name: List repository
+        run: ls -la
 
-          # Пример многолинейного скрипта shell
-          - name: Run a multi-line script
-            run: |
-                echo Add other actions to build,
-                echo test, and deploy your project.
+      # Пример многолинейного скрипта shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
