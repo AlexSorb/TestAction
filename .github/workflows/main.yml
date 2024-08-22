@@ -31,4 +31,7 @@ jobs:
         
       - name: Check Gradle version
         run: gradle -v
+        
+      - name: Build with Gradle Wrapper
+        run: ./gradlew build
           
