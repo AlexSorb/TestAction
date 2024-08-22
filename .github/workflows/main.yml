@@ -40,7 +40,6 @@ jobs:
         run: |
           cd ./app
           ls -la
-          make build
-          make test
-          make run-project:
+          ./gradlew build
+          ./gradlew  test
           
