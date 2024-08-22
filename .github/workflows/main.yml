@@ -3,9 +3,9 @@ name: Build and Test
 on: 
   # Событие которые запускают jobs
   push:
-    branches: [ $default-branch ]
+    branches: ["main"]
   pull_request:
-    branches: [ $default-branch ]
+    branches: ["main"]
 jobs:
   # Название job
   Build:
