@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="modelTest.CalculateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-22T10:47:35" hostname="alex-Z97X-Gaming-3" time="0.066">
+<testsuite name="modelTest.CalculateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-22T10:59:43" hostname="alex-Z97X-Gaming-3" time="0.062">
   <properties/>
-  <testcase name="sumTest()" classname="modelTest.CalculateTest" time="0.066"/>
+  <testcase name="sumTest()" classname="modelTest.CalculateTest" time="0.062"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
