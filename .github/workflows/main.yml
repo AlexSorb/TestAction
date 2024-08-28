@@ -10,6 +10,10 @@ jobs:
   # Название job
   Build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ${{ github.workspace }}/test
     steps:
       # Actions от github: проверяет репозиторий, гит и т.д.
       - name: Checout code
@@ -32,8 +36,14 @@ jobs:
       - name: Check Gradle version
         run: gradle -v
         
-      - name: Build with Gradle Wrapper
-        run: |
-          cd ./app ; ./gradlew build
+      #- name: Build with Gradle Wrapper
+      #  run: |
+      #    cd ./app ; ./gradlew build
 
+      - name: Where am I
+        run: pwd
+
+      - name: Run make
+        run: make say-hello
+      
           
