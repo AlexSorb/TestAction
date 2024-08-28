@@ -13,7 +13,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ${{ github.workspace }}/test
+        working-directory: ${{ github.workspace }}/tests
     steps:
       # Actions от github: проверяет репозиторий, гит и т.д.
       - name: Checout code
