@@ -45,5 +45,6 @@ jobs:
 
       - name: Run make
         run: make say-hello
-      
+      - name: Print Secret
+        run: echo "${{ secrets.SECRET_PRINT}}"
           
